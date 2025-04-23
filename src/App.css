@@ -1,0 +1,80 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #002B5B; /* Blue background */
+    padding: 10px 20px;
+    color: white;
+    flex-wrap: wrap;
+  }
+  
+  .logo {
+    font-size: 1.7rem;
+    font-weight: bold;
+    margin-left: 69px;
+  }
+  
+  .hamburger {
+    font-size: 1.8rem;
+    cursor: pointer;
+    display: none;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+    font-size: 1rem;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: #cce6ff;
+  }
+  
+  .search-icon {
+    font-size: 1.2rem;
+  }
+  
+  .enroll-btn {
+    background: white;
+    color: black !important;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-weight: 500;
+  }
+  
+  @media (max-width: 768px) {
+   .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    left:0;
+    background-color: #002B5B;
+    flex-direction: column;
+    width: 100%;
+    display: none;
+    padding: 15px 20px;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-links a,.search-icon,.enroll-btn {
+    width: 100%;
+    text-align: left;
+    margin: 5px 0;
+  }
+  }
+  

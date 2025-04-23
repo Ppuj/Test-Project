@@ -1,0 +1,205 @@
+.highlights-section {
+    padding: 40px 20px;
+    background: #f9f9f9;
+  }
+  
+  .upcoming-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    margin-left: 100px;
+  }
+  
+  .upcoming-left {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .upcoming-left h2 {
+    font-size: 1.7rem;
+    margin-bottom: 10px;
+    color: #002B5B;
+  }
+  
+  .upcoming-left p {
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+    color: #555;
+  }
+  
+  .upcoming-left hr {
+    margin: 20px 0;
+    border: none;
+    border-top: 2px solid #007BFF;
+    width: 80px;
+  }
+  
+  .separator {
+    width: 2px;
+    height: 100%;
+    background-color: black; 
+    margin: 0 20px; 
+  }
+  
+  .calendar-list {
+    display: flex;
+    justify-content: flex-start;
+    gap: 75px;
+    flex-grow: 1;
+  }
+  
+  .calendar-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 0.95rem;
+    text-align: left;
+  }
+  
+  .calendar-icon {
+    font-size: 2rem;
+  }
+  
+  .calendar-date {
+    font-weight: bold;
+    color: #002B5B;
+  }
+  
+  .calendar-text {
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  .cards-section {
+    margin-top: 40px;
+    margin-left: 90px;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+
+  .card-container {
+    display: flex;
+    overflow-x: hidden;
+  scroll-behavior: smooth;
+    gap: 20px;
+    padding: 20px 0;
+    
+  }
+  
+  .card-box {
+    background: #002B5B;
+    color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    text-align: left;
+    min-width: 250px;
+    max-width: 280px;
+    flex: 0 0 auto;
+    overflow-wrap: break-word;
+  }
+  
+  .card-box h3 {
+    margin-bottom: 10px;
+  }
+  
+  .card-box p {
+    font-size: 0.9rem;
+    color: white;
+    margin-bottom: 15px;
+  }
+  
+  .card-box button {
+    padding: 8px 14px;
+    background: #002B5B;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .card-box button:hover {
+    background: #0056b3;
+  }
+  .card-slider-wrapper {
+    position: relative;              /* ✅ key: makes scroll buttons stay within this block */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .slider-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+  }
+  
+  .scroll-button {
+    position: absolute;
+    top: 50%;                        /* ✅ vertically center button */
+    transform: translateY(-50%);    /* ✅ center offset */
+    /* background-color: #3e6792; */
+    color: white;
+    border: none;
+    padding: 10px 12px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-radius: 4px;
+    z-index: 2;
+  }
+
+  .scroll-button.left {
+    left: -33px;
+  }
+  
+  .scroll-button.right {
+    right: -15px;
+  }
+  /* Responsive */
+  @media (max-width: 768px) {
+    .upcoming-section {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .separator {
+      display: none; /* Hide vertical line on mobile */
+    }
+  
+    .calendar-list {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .calendar-item {
+      margin-bottom: 15px;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .calendar-icon {
+      font-size: 1.8rem;
+    }
+  
+    .calendar-date {
+      font-size: 1.1rem;
+    }
+    .card-container {
+        flex-direction: column;
+      }
+      .scroll-button {
+        display: none;
+      }
+      .upcoming-section {
+        margin-left: 0px;
+      }
+      .cards-section{
+        margin-left:0px;
+      }
+  }
+  

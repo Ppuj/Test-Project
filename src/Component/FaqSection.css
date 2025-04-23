@@ -1,0 +1,107 @@
+.faq-subscribe-section {
+    padding: 30px 20px;
+    background-color: #f7f7f7;
+    text-align: center;
+  }
+  
+  /* FAQ Section */
+  .faq-title {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: bold;
+    color: #002B5B;
+  }
+  
+  .faq-list {
+    margin: 60px 125px;
+    text-align: left;
+  }
+  
+  .faq-item {
+    margin-bottom: 20px;
+  }
+  
+  .faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 10px 0;
+    color:black
+  }
+  
+  .faq-icon {
+    font-size: 1.5rem;
+    color: #007BFF;
+    cursor: pointer;
+  }
+  
+  hr {
+    border: none;
+    border-top: 1px solid #ccc;
+  }
+  
+  /* Subscribe Section */
+  .subscribe-section {
+    margin-top: 60px;
+    text-align: left;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #002B5B;
+  }
+  
+  .subscribe-title {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+  
+  .subscribe-text {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .subscribe-form {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .subscribe-form input {
+    flex: 1;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background-color: white;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+  
+  .subscribe-form button {
+    padding: 10px 20px;
+    background-color: #002B5B;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .subscribe-form button:hover {
+    background-color: #002B5B;
+  }
+  
+  /* Responsive */
+  @media (max-width: 600px) {
+    .subscribe-form {
+      flex-direction: column;
+    }
+  
+    .subscribe-form button {
+      width: 100%;
+    }
+  }
+  
