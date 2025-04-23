@@ -1,10 +1,10 @@
 import './App.css'
-import FaqSection from './Component/FaqSection';
-import Footer from './Component/Footer';
+import FaqSection from './Component/FaqSection.jsx';
+import Footer from './Component/Footer.jsx';
 import HighlightSection from './Component/HighlightSection';
 import LoremSection from './Component/LoremSection';
-import Header from './Component/header'
-import Section from './Component/section';
+import Header from './Component/header.jsx'
+import Section from './Component/section.jsx';
 import slide1 from './assets/slide1.jpg'
 import slide2 from './assets/slide2.jpg'
 import slide3 from './assets/slide3.jpg'
